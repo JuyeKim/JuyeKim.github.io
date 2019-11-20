@@ -1,1 +1,189 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Juye Kim, Researcher at Carnegie Mellon University</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="import" href="import.html">
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <h3><strong>Juye Kim</strong></h3>
+                    </li>
+                        <li id="nav-home"><a href="index.html#home">Home</a></li>
+                        <li id="nav-experience"><a href="index.html#experiences">Experiences</a></li>
+                        <li id="nav-contacts"><a href="index.html#contacts">Contact</a></li>
+                    <br/>
+                </ul>
+            </div>
+            <!-- Page content -->
+            <div id="page-content-wrapper">
+                <!-- Keep all page content within the page-content inset div! -->
+                <div class="page-content inset" id="home">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <a id="menu-toggle" href="#" >
+                            <button type="button" class="btn btn-default btn-lg">
+                            <span class="glyphicon glyphicon-th-list"></span>
+                            </button>
+                            </a>
+                            <p class="lead" >Welcome!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-11">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="intro">I am a researcher in Electrical and Computer Engineering Department at Carnegie Mellon University.</p>
+                                    <p class="intro">My research interests are in building energy management, system integration of IoTs, distributed energy resources integration, and building simulation.
+. <br>My research advisor is <a href="http://users.ece.cmu.edu/~jmohamma/index.html" target="_blank">Dr. Javad Mohammadi</a>
+                                    </p>
+                                    <br>
+                                    <p class="intro">
+                                    <span class="pull-right">
+                                    <img style="width: 50%;" src="http://users.ece.cmu.edu/~jmohamma/images/Team/JuyeKim-1.jpeg" class="img-responsive">
+                                    </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- News -->
+                <div class="page-content inset" id="news">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="lead">Updates</p>
+                            <div class="" id="accordion">
+                                <ul class="publication">
+                                    <li>•  <span class="link"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Experiences -->
+                <div class="page-content inset" id="experiences">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="lead">Experiences</p>
+                            <div class="" id="accordion">
+                                <ul class="publication">
+
+
+                                    <li class="media">
+                                        <span class="title">Company</span> <span class="venue">Seoul South Korea, May 2019 - Present</span></br>
+                                        a project info
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div class="page-content inset" id="contacts">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p class="lead">Contact</p>
+                            <p class="contacts">    Juye Kim <br/>
+                                Electrical and Computer Engineering Department<br/>
+                                Carnegie Mellon University <br/>
+                                5000 Forbes Ave, Pittsburgh, PA 15213
+                            </p>
+                            <p class="contacts">    
+                                <img src="juyekim0303 - at - gmail.com">
+                            </p>    
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- JavaScript -->
+        <script src="js/jquery-1.10.2.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <!-- Custom JavaScript for the Menu Toggle -->
+        <script>
+            $("#menu-toggle").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("active");
+             });
+
+            $("#nav-home").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("active");
+              window.location = '#home';
+             });
+
+            $("#nav-experience").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("active");
+              window.location = '#experiences';
+             });
+
+            $("#nav-experience").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("active");
+              window.location = '#tutorial';
+             });
+
+            $("#nav-papers").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("active");
+              window.location = '#publications';
+             });
+
+            $("#nav-teaching").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("active");
+              window.location = '#teaching';
+             });
+
+            $("#nav-projects").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("active");
+              window.location = '#projects';
+             });
+
+            $("#nav-contacts").click(function(e) {
+              e.preventDefault();
+              $("#wrapper").toggleClass("active");
+              window.location = '#contacts';
+             });
+
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+        </script>
+</body>
+</html>

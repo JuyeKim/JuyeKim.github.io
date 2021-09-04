@@ -1,7 +1,7 @@
 .body{
 	font-family:"Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, Tahoma, sans-serif;	
 /* 	font-size:0.9em; */
-	font-size: 12px;
+	font-size: 14px;
 	margin:1em;
 }
 
@@ -34,7 +34,7 @@
 
 .publication .title{
 	font-weight:bold;	
-	font-size:14px;
+	font-size:16px;
 }
 
 .publication .venue{
@@ -46,10 +46,10 @@
 }
 
 .publication li {
-	line-height:18px;
-	margin-bottom: 14px;
+	line-height:23px;
+	margin-bottom: 19px;
 	margin-left:-40px;
-	font-size:13px;
+	font-size:14px;
 	list-style-type:none;
 }
 
@@ -80,10 +80,11 @@
 
 .news li {
 	line-height:18px;
-	margin-bottom: 14px;
+	margin-bottom: 4px;
 	margin-left:-40px;
-	font-size:13px;
-	list-style-type:disc;
+	font-size:14px;
+	/*list-style-type:disc;*/
+  list-style-type:none;
 }
 
 .news .link a{
@@ -100,17 +101,17 @@
 
 
 .projects p{
-  font-size:13px;
+  font-size:14px;
   line-height:20px;
 }
 
 .p-intro{
-  font-size:12px;
+  font-size:14px;
   font-weight:bold;
 }
 
 .p-author{
-  font-size:12px;
+  font-size:14px;
 }
 
 .project-publication a{
@@ -124,12 +125,23 @@
 }
 
 .contacts{
-  font-size:12px;
+  font-size:14px;
   line-height:20px;
 }
 
 
 .intro{
-  font-size:14px;
-  line-height:23px;
+  font-size:15px;
+  line-height:25px;
 }
+
+.date {
+    color: #d07000;
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding-right: 1em;
+    vertical-align: 0.0%;
+}
+
+
